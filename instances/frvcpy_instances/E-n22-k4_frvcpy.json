@@ -182,7 +182,7 @@
       "cs_type": "fast"
     }
   ],
-  "max_q": 94.0,
+  "max_q":94.0,
   "consumption_rate": 1.2,
   "speed": 1.0,
   "breakpoints_by_type": [

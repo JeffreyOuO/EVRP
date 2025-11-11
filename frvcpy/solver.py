@@ -122,6 +122,7 @@ class Solver():
                                                 possible_cs_detour,
                                                 possible_cs_link)  # list[list[int]]
 
+
         # all below lists are of length len(nodes_gpr)
         (
             min_travel_time_after_node,
@@ -478,8 +479,9 @@ class Solver():
             if min_energy_to_charge > 0:
                 latest_departure_time[i] -= min_energy_to_charge / \
                     self.instance.max_slope
-            min_energy_at_departure[i] = self.instance.get_min_energy_to_cs(
-                curr_id)
+            # modify here 
+            #min_energy_at_departure[i] = self.instance.get_min_energy_to_cs(curr_id)
+            min_energy_at_departure[i]=0.0
             max_energy_at_departure[i] = self.instance.max_q
             # endregion
 
